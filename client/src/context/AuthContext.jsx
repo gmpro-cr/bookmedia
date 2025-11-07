@@ -1,6 +1,9 @@
 import React, { createContext, useContext, useState, useEffect } from 'react'
 import axios from 'axios'
 
+// Configure axios defaults
+axios.defaults.baseURL = 'http://localhost:3000'
+
 const AuthContext = createContext()
 
 export const useAuth = () => {
